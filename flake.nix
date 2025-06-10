@@ -9,6 +9,12 @@
     darwin.url = "github:lnl7/nix-darwin";
     darwin.inputs.nixpkgs.follows = "nixpkgs";
 
+    # Dotfiles
+    dotfiles = {
+      url = "github:syrkis/dotfiles";
+      flake = false;
+    };
+
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
 
     # Declarative tap management
