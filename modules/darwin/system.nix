@@ -70,7 +70,7 @@
       AppleInterfaceStyle = "Dark";
 
       # Auto-hide menu bar (optional, looks clean with dark mode)
-      _HIHideMenuBar = false; # set to true to auto-hide
+      _HIHideMenuBar = true; # set to true to auto-hide
     };
 
     # Screenshot settings
