@@ -40,7 +40,6 @@
       "iterm2"
       "skim"
       "obs"
-      "notunes"
       "vagrant"
       "ghostty"
       "spotify"

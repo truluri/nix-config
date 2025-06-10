@@ -50,6 +50,8 @@
     newcomputermodern
 
     # Security & Privacy
+    gnupg
+    pinentry_mac # Better GPG pinentry for macOS
     (pass.withExtensions (ps: [ ps.pass-otp ]))
 
     # Communication
@@ -67,5 +69,10 @@
     # Specialized tools
     uiua
     nushell
+
+    # git stuff
+    gh # GitHub CLI
+    git-lfs # Large file support
+    glab # GitLab CLI (if you use GitLab)
   ];
 }

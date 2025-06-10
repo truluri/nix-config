@@ -20,23 +20,51 @@
     pathsToLink = [ "/Applications" ];
   };
 
-  # System defaults
-  system.defaults.dock = {
-    orientation = "left";
-    autohide = true;
-    # mineffect = "scale";
-    # minimize-to-application = true;
-    # mru-spaces = false;
-  };
-
-  system.defaults.dock.persistent-apps = [
-    { app = "/Applications/Safari.app"; }
-    { app = "/Applications/Zed.app"; }
-  ];
-
   # IDs configuration
   ids.gids.nixbld = 350;
 
   # sudo via finger
   security.pam.services.sudo_local.touchIdAuth = true;
+
+  # Enhance modules/darwin/system.nix
+  system.defaults = {
+    dock = {
+      autohide = true;
+      orientation = "left";
+      show-recents = false;
+      tilesize = 48;
+      persistent-apps = [
+        { app = "/Applications/Mail.app"; }
+        { app = "/Applications/Zotero.app"; }
+        { app = "/Applications/Zen.app"; }
+        { app = "/Applications/Zed.app"; }
+      ];
+    };
+
+    finder = {
+      AppleShowAllExtensions = true;
+      ShowPathbar = true;
+      ShowStatusBar = true;
+      FXDefaultSearchScope = "SCcf"; # Search current folder
+    };
+
+    NSGlobalDomain = {
+      # Faster key repeat
+      KeyRepeat = 2;
+      InitialKeyRepeat = 15;
+
+      # Show file extensions
+      AppleShowAllExtensions = true;
+
+      # Disable auto-correct
+      NSAutomaticSpellingCorrectionEnabled = false;
+    };
+
+    # Screenshot settings
+    screencapture = {
+      location = "~/Pictures/Screenshots";
+      type = "png";
+    };
+  };
+
 }
