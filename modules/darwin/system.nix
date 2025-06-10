@@ -74,7 +74,7 @@
 
       # Trackpad
       "com.apple.trackpad.enableSecondaryClick" = true;
-      "com.apple.trackpad.scaling" = 3;
+      "com.apple.trackpad.scaling" = 3.0;
     };
 
     # Screenshot settings
