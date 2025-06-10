@@ -65,6 +65,12 @@
 
       # Disable auto-correct
       NSAutomaticSpellingCorrectionEnabled = false;
+
+      # Set dark mode
+      AppleInterfaceStyle = "Dark";
+
+      # Auto-hide menu bar (optional, looks clean with dark mode)
+      _HIHideMenuBar = false; # set to true to auto-hide
     };
 
     # Screenshot settings
