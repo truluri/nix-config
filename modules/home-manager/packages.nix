@@ -69,6 +69,8 @@
     # Specialized tools
     uiua
     nushell
+    ruff
+    ty
 
     # git stuff
     gh # GitHub CLI
