@@ -22,13 +22,24 @@
     };
   };
   outputs = inputs: {
-    darwinConfigurations.c23 = inputs.darwin.lib.darwinSystem {
-      system = "aarch64-darwin";
-      pkgs = import inputs.nixpkgs { system = "aarch64-darwin"; };
-      modules = [
-        ./hosts/c23
-      ];
-      specialArgs = { inherit inputs; };
+    darwinConfigurations = {
+      c23 = inputs.darwin.lib.darwinSystem {
+        system = "aarch64-darwin";
+        pkgs = import inputs.nixpkgs { system = "aarch64-darwin"; };
+        modules = [
+          ./hosts/c23
+        ];
+        specialArgs = { inherit inputs; };
+      };
+      
+      mac624172 = inputs.darwin.lib.darwinSystem {
+        system = "aarch64-darwin";
+        pkgs = import inputs.nixpkgs { system = "aarch64-darwin"; };
+        modules = [
+          ./hosts/mac624172
+        ];
+        specialArgs = { inherit inputs; };
+      };
     };
   };
 }

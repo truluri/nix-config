@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   # System configuration
-  system.primaryUser = "syrkis";
+  # primaryUser is set in each host configuration
   system.stateVersion = 4;
 
   # Shell configuration

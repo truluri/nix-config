@@ -6,17 +6,17 @@
   ];
 
   # Set primary user for this host
-  system.primaryUser = "syrkis";
+  system.primaryUser = "nobr";
 
   nix-homebrew = {
     # Install Homebrew under the default prefix
     enable = true;
 
     # Apple Silicon Only: Also install Homebrew under the default Intel prefix for Rosetta 2
-    enableRosetta = false;
+    enableRosetta = true;
 
     # User owning the Homebrew prefix
-    user = "syrkis";
+    user = "nobr";
 
     # Optional: Declarative tap management
     taps = {
@@ -32,15 +32,15 @@
     mutableTaps = false;
   };
 
-  users.users.syrkis = {
-    name = "syrkis";
-    home = "/Users/syrkis";
+  users.users.nobr = {
+    name = "nobr";
+    home = "/Users/nobr";
   };
 
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
-    users.syrkis.imports = [ ../../modules/home-manager ];
+    users.nobr.imports = [ ../../modules/home-manager ];
     extraSpecialArgs = { inherit inputs; };
   };
 }
