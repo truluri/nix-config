@@ -21,9 +21,18 @@
   };
 
   # System defaults
-  system.defaults.dock.autohide = true;
-  system.keyboard.enableKeyMapping = true;
-  system.keyboard.remapCapsLockToEscape = true;
+  system.defaults.dock = {
+    orientation = "left";
+    autohide = true;
+    # mineffect = "scale";
+    # minimize-to-application = true;
+    # mru-spaces = false;
+  };
+
+  system.defaults.dock.persistent-apps = [
+    { app = "/Applications/Safari.app"; }
+    { app = "/Applications/Zed.app"; }
+  ];
 
   # IDs configuration
   ids.gids.nixbld = 350;
