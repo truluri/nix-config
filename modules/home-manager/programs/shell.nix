@@ -22,7 +22,7 @@
       enableFishIntegration = true;
       enableZshIntegration = true;
       git = true;
-      icons = true;
+      icons = "auto";
     };
     
     # Fuzzy finder

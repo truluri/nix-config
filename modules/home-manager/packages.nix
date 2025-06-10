@@ -11,7 +11,7 @@
     nixd
     nil
     nixpkgs-fmt
-    nixfmt
+    nixfmt-classic
     biome
     swig4
     cmake
@@ -60,6 +60,9 @@
     starship
     bat
     ollama
+    yazi
+    dust
+    procs
 
     # Specialized tools
     uiua

@@ -27,27 +27,7 @@
       };
     };
     
-    # Terminal file manager
-    yazi = {
-      enable = true;
-      enableFishIntegration = true;
-      enableZshIntegration = true;
-    };
-    
-    # System monitor
-    htop = {
-      enable = true;
-      settings = {
-        show_cpu_frequency = true;
-        show_cpu_temperature = true;
-        tree_view = true;
-      };
-    };
-    
-    # Modern du replacement
-    du-dust.enable = true;
-    
-    # Process viewer
-    procs.enable = true;
+    # System monitor  
+    htop.enable = true;
   };
 }
