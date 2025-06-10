@@ -18,7 +18,13 @@
     systemPackages = with pkgs; [ coreutils nushell ];
     systemPath = [ "/opt/homebrew/bin/" ];
     pathsToLink = [ "/Applications" ];
+    variables = {
+      EDITOR = "nvim";
+      VISUAL = "nvim";
+      GIT_EDITOR = "nvim";
+    };
   };
+  # Set default editor system-wide
 
   # IDs configuration
   ids.gids.nixbld = 350;
