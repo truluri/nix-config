@@ -7,6 +7,7 @@
   programs.zsh.enable = true;
   programs.fish.enable = true;
   environment.shells = with pkgs; [ zsh bash fish nushell ];
+  users.defaultUserShell = pkgs.fish;
 
   # Nix configuration
   nix.extraOptions = ''
