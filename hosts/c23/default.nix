@@ -42,5 +42,6 @@
     useUserPackages = true;
     users.syrkis.imports = [ ../../modules/home-manager ];
     extraSpecialArgs = { inherit inputs; };
+    backupFileExtension = "backup";
   };
 }
