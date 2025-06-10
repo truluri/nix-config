@@ -71,6 +71,10 @@
 
       # Auto-hide menu bar (optional, looks clean with dark mode)
       _HIHideMenuBar = true; # set to true to auto-hide
+
+      # Trackpad
+      "com.apple.trackpad.enableSecondaryClick" = true;
+      "com.apple.trackpad.scaling" = 3;
     };
 
     # Screenshot settings
