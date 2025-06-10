@@ -27,4 +27,7 @@
 
   # IDs configuration
   ids.gids.nixbld = 350;
+
+  # sudo via finger
+  security.pam.services.sudo_local.touchIdAuth = true;
 }
