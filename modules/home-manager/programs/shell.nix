@@ -1,5 +1,10 @@
 { ... }: {
   programs = {
+    # Enable shell programs (required for aliases to work)
+    bash.enable = true;
+    zsh.enable = true;
+    fish.enable = true;
+
     # Modern shell prompt
     starship.enable = true;
 
@@ -14,7 +19,6 @@
       enable = true;
       enableFishIntegration = true;
       enableZshIntegration = true;
-      # This creates the 'z' command, but we want 'cd' to use zoxide too
     };
 
     # Shell aliases
