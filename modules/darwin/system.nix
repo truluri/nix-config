@@ -34,10 +34,11 @@
       show-recents = false;
       tilesize = 48;
       persistent-apps = [
-        { app = "/Applications/Mail.app"; }
+        { app = "System/Applications/Mail.app"; }
         { app = "/Applications/Zotero.app"; }
         { app = "/Applications/Zen.app"; }
         { app = "/Applications/Zed.app"; }
+        { app = "/System/Applications/System Settings.app"; }
       ];
     };
 

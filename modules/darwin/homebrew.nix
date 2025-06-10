@@ -43,6 +43,7 @@
       "vagrant"
       "ghostty"
       "spotify"
+      "zotero"
     ];
   };
 }
