@@ -84,4 +84,13 @@
     };
   };
 
+  # Disable Spotlight Command+Space shortcut
+  system.activationScripts.extraActivation.text = ''
+    # Disable Spotlight keyboard shortcut (Command+Space)
+    /usr/bin/defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 '<dict><key>enabled</key><false/></dict>'
+
+    # Restart SystemUIServer to apply changes
+    /usr/bin/killall SystemUIServer 2>/dev/null || true
+  '';
+
 }
