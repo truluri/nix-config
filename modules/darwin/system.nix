@@ -69,9 +69,6 @@
       # Set dark mode
       AppleInterfaceStyle = "Dark";
 
-      # dont be djordje
-      ApplePersistence = false;
-
       # Auto-hide menu bar (optional, looks clean with dark mode)
       _HIHideMenuBar = true; # set to true to auto-hide
 
