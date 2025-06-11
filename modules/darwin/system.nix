@@ -89,5 +89,10 @@
       type = "png";
       target = "file";
     };
+
+    screensaver = {
+      askForPassword = true;
+      askForPasswordDelay = 0;
+    };
   };
 }
