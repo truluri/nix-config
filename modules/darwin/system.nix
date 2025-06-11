@@ -44,6 +44,7 @@
         { app = "/Applications/Zotero.app"; }
         { app = "/Applications/Zen.app"; }
         { app = "/Applications/Zed.app"; }
+        { app = "/Applications/Ghostty.app"; }
         { app = "/System/Applications/System Settings.app"; }
       ];
     };

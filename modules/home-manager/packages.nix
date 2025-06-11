@@ -77,5 +77,8 @@
     git-lfs # Large file support
     glab # GitLab CLI (if you use GitLab)
 
+    # other
+    epy
+
   ];
 }
