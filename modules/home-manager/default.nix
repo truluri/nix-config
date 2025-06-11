@@ -4,7 +4,7 @@
     ./programs/git.nix
     ./programs/neovim.nix
     ./programs/shell.nix
-    ./programs/terminal.nix
+    # ./programs/terminal.nix
     # ./dotfiles.nix
   ];
 

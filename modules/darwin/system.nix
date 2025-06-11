@@ -77,6 +77,10 @@
       "com.apple.trackpad.enableSecondaryClick" = true;
       "com.apple.trackpad.scaling" = 3.0;
 
+      # Disable system sounds
+      "com.apple.sound.beep.feedback" = 0;
+      "com.apple.sound.beep.volume" = 0.0;
+
     };
 
     # Screenshot settings
