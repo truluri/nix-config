@@ -11,6 +11,7 @@
   # Nix configuration
   nix.extraOptions = ''
     experimental-features = nix-command flakes
+    allow-dirty = true
   '';
 
   # System packages and paths
@@ -24,7 +25,6 @@
       GIT_EDITOR = "nvim";
     };
   };
-  # Set default editor system-wide
 
   # IDs configuration
   ids.gids.nixbld = 350;
@@ -69,28 +69,23 @@
       # Set dark mode
       AppleInterfaceStyle = "Dark";
 
+      # dont be djordje
+      ApplePersistence = false;
+
       # Auto-hide menu bar (optional, looks clean with dark mode)
       _HIHideMenuBar = true; # set to true to auto-hide
 
       # Trackpad
       "com.apple.trackpad.enableSecondaryClick" = true;
       "com.apple.trackpad.scaling" = 3.0;
+
     };
 
     # Screenshot settings
     screencapture = {
       location = "~/Pictures/Screenshots";
       type = "png";
+      target = "file";
     };
   };
-
-  # Disable Spotlight Command+Space shortcut
-  system.activationScripts.extraActivation.text = ''
-    # Disable Spotlight keyboard shortcut (Command+Space)
-    /usr/bin/defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 '<dict><key>enabled</key><false/></dict>'
-
-    # Restart SystemUIServer to apply changes
-    /usr/bin/killall SystemUIServer 2>/dev/null || true
-  '';
-
 }
