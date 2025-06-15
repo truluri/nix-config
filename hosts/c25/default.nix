@@ -6,7 +6,7 @@
   ];
 
   # Set primary user for this host
-  system.primaryUser = "syrkis";
+  system.primaryUser = "askebrunken";
 
   nix-homebrew = {
     # Install Homebrew under the default prefix
@@ -16,7 +16,7 @@
     enableRosetta = false;
 
     # User owning the Homebrew prefix
-    user = "syrkis";
+    user = "askebrunken";
 
     # Optional: Declarative tap management
     taps = {
@@ -32,15 +32,15 @@
     mutableTaps = false;
   };
 
-  users.users.syrkis = {
-    name = "syrkis";
-    home = "/Users/syrkis";
+  users.users.askebrunken = {
+    name = "askebrunken";
+    home = "/Users/askebrunken";
   };
 
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
-    users.syrkis.imports = [ ../../modules/home-manager ];
+    users.askebrunken.imports = [ ../../modules/home-manager ];
     extraSpecialArgs = { inherit inputs; };
     backupFileExtension = "backup";
   };

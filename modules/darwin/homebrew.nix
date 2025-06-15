@@ -30,11 +30,8 @@
     ];
 
     casks = [
-      "steam"
       "brave-browser"
-      "slack"
       "zen-browser"
-      "unity-hub"
       "logseq"
       "raycast"
       "zed"

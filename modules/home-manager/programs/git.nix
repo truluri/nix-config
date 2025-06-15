@@ -1,8 +1,8 @@
 { ... }: {
   programs.git = {
     enable = true;
-    userName = "Noah Syrkis";
-    userEmail = "noah@syrkis.com";
+    userName = "Aske Brunken";
+    userEmail = "askenbroken@proton.me";
 
     signing = {
       key = null;

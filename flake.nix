@@ -9,11 +9,6 @@
     darwin.url = "github:lnl7/nix-darwin";
     darwin.inputs.nixpkgs.follows = "nixpkgs";
 
-    # Dotfiles
-    # dotfiles = {
-    # url = "github:syrkis/dotfiles";
-    # flake = false;
-    # };
 
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
 
@@ -29,17 +24,10 @@
   };
   outputs = inputs: {
     darwinConfigurations = {
-      c23 = inputs.darwin.lib.darwinSystem {
+      c25 = inputs.darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         pkgs = import inputs.nixpkgs { system = "aarch64-darwin"; };
-        modules = [ ./hosts/c23 ];
-        specialArgs = { inherit inputs; };
-      };
-
-      mac624172 = inputs.darwin.lib.darwinSystem {
-        system = "aarch64-darwin";
-        pkgs = import inputs.nixpkgs { system = "aarch64-darwin"; };
-        modules = [ ./hosts/mac624172 ];
+        modules = [ ./hosts/c25 ];
         specialArgs = { inherit inputs; };
       };
     };

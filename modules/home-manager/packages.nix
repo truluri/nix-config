@@ -6,7 +6,6 @@
     # Development tools
     typescript
     nodejs_22
-    clojure
     uv
     nixd
     nil
@@ -15,7 +14,6 @@
     biome
     swig4
     cmake
-    docker
 
     # CLI utilities
     ripgrep
@@ -39,15 +37,12 @@
     ffmpeg
     imagemagick
     ghostscript
-    blender
+    stremio
 
     # Documents & Publishing
     pandoc
     typst
     typstyle
-    hledger
-    hledger-ui
-    newcomputermodern
 
     # Security & Privacy
     gnupg
