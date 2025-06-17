@@ -37,7 +37,6 @@
     ffmpeg
     imagemagick
     ghostscript
-    stremio
 
     # Documents & Publishing
     pandoc

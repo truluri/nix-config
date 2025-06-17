@@ -43,6 +43,7 @@
       "spotify"
       "zotero"
       "obsidian"
+      "stremio"
     ];
   };
 }
