@@ -42,6 +42,7 @@
       "ghostty"
       "spotify"
       "zotero"
+      "obsidian"
     ];
   };
 }
