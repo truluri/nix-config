@@ -28,8 +28,6 @@
     tealdeer
     croc
     just
-    hurl
-    nmap
     asciinema
     watch
 
@@ -65,6 +63,7 @@
     nushell
     ruff
     ty
+    pdf-parser
 
     # git stuff
     gh # GitHub CLI
@@ -72,7 +71,6 @@
     glab # GitLab CLI (if you use GitLab)
 
     # other
-    epy
 
   ];
 }

@@ -15,6 +15,8 @@
     # Apple Silicon Only: Also install Homebrew under the default Intel prefix for Rosetta 2
     enableRosetta = false;
 
+    autoMigrate = true;
+
     # User owning the Homebrew prefix
     user = "askebrunken";
 
@@ -25,7 +27,6 @@
     };
 
     # Automatically migrate existing Homebrew installations
-    autoMigrate = true;
 
     # Optional: Enable fully-declarative tap management
     # With mutableTaps disabled, taps can no longer be added imperatively with `brew tap`

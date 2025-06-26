@@ -44,6 +44,7 @@
       "zotero"
       "obsidian"
       "stremio"
+      "jupyterlab"
     ];
   };
 }
